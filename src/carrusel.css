@@ -1,0 +1,47 @@
+.carrusel-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 50px); /* Resta la altura de la navbar */
+    width: 100%;
+    background: #333;
+    overflow: hidden;
+  }
+  
+  .carrusel {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+  
+  .carrusel-item {
+    min-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 24px;
+    color: white;
+    background-color: #555;
+    height: 400px; /* Altura del carrusel */
+    border-radius: 8px;
+  }
+  
+  .carrusel-boton {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.7);
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    padding: 5px 10px;
+  }
+  
+  .anterior {
+    left: 10px;
+  }
+  
+  .siguiente {
+    right: 10px;
+  }
+  

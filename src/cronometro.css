@@ -1,0 +1,61 @@
+
+.cronometro-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute; 
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center; 
+}
+
+
+.cronometro-container h1 {
+    font-size: 2rem;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+
+.cronometro-screen {
+    background-color: #333;
+    color: #0f0;
+    font-size: 3rem;
+    font-weight: bold;
+    padding: 20px 40px;
+    border-radius: 8px;
+    margin: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    display: inline-block;
+}
+
+
+.cronometro-buttons button {
+    background-color: #333;
+    color: #0f0;
+    font-size: 1rem;
+    padding: 10px 20px;
+    margin: 5px;
+    border: 2px solid #0f0;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cronometro-buttons button:hover {
+    background-color: #0f0;
+    color: #333;
+}
+
+.cronometro-buttons button:disabled {
+    background-color: #666;
+    color: #aaa;
+    cursor: not-allowed;
+    border-color: #aaa;
+}
